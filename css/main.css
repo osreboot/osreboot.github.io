@@ -129,6 +129,22 @@ textarea {
   display: flex;
   flex-direction: column-reverse;
 }
+.item-col {
+  display: flex;
+  flex-direction: column;
+}
+.item-col-rs {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.item-row-col {
+  display: flex;
+  flex-direction: column;
+}
+.item-image-half {
+  background-color: white;
+  width: 100%;
+}
 
 .cover {
   margin: auto;
@@ -224,7 +240,6 @@ textarea {
   border-radius: 10px 10px 10px 10px;
   padding: 10px;
 }
-
 .palette-buttons {
   float: right;
   display: flex;
@@ -243,7 +258,6 @@ textarea {
 }
 .palette-button:hover { box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.3); }
 .palette-button-w:hover { box-shadow: inset 0 0 0 50vw rgba(255,255,255,0.3); }
-
 .palette-view {
   position: relative;
   object-fit: cover;
@@ -256,14 +270,12 @@ textarea {
   max-height: 100%;
   border: none;
 }
-
 .palette-image {
   object-fit: cover;
   min-height: 100%;
   max-width: 100%;
   max-height: 100%;
 }
-
 .palette-caption-0, .palette-caption-1, .palette-caption-2, .palette-caption-3 {
   position: absolute;
   white-space: pre-line;
@@ -405,10 +417,13 @@ a {
 
   .page { width: 100%; }
 
-  .section { margin: 80px 10px; }
+  .section { margin: 80px 20px; }
   .section-spacer { height: 80px; }
 
   .item-row, .item-row-rs { flex-direction: row; }
+  .item-col, .item-col-rs { flex-direction: column; }
+  .item-row-col { flex-direction: row; }
+  .item-image-half { width: 50%; }
   .palette { }
   .description { flex: 60%; }
 
