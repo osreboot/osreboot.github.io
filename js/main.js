@@ -4,7 +4,8 @@ function copyEmail(){
 }
 
 function paletteSelect(event, idParent, idChild){
-  let children = document.getElementById(idParent).children;
+  let childrenParent = document.getElementById(idParent).children;
+  let children = childrenParent.item(0).children.item(0).children;
   for(let i = 0; i < children.length; i++){
     if(children[i].classList.contains("palette-view")){
       children[i].style.display = "none";
