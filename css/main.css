@@ -259,28 +259,22 @@ textarea {
 }
 .palette-button:hover { box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.3); }
 .palette-button-w:hover { box-shadow: inset 0 0 0 50vw rgba(255,255,255,0.3); }
-.palette-view-container-outer {
-  flex: 100%;
-  background-color: magenta;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.palette-button-video-symbol {
+  font-size: 40px !important;
+  margin: 4px 0 0 0 !important;
 }
-.palette-view-container-inner {
+.palette-view-container {
   flex: 100%;
-  aspect-ratio: 16 / 9;
-  background-color: palegreen;
+  display: flex;
+  align-content: center;
+  overflow: auto;
 }
 .palette-view {
   display: none;
-  width: 100%;
-  height: 100%;
+  flex: 100%;
+  aspect-ratio: 16 / 9;
   border: none;
-}
-.palette-video {
-  width: 100%;
-  height: 100%;
-  border: none;
+  position: relative;
 }
 .palette-image {
   width: 100%;
@@ -288,14 +282,14 @@ textarea {
   border: none;
 }
 .palette-caption-0, .palette-caption-1, .palette-caption-2, .palette-caption-3 {
-  display: none;
-  position: relative;
+  position: absolute;
   white-space: pre-line;
   color: white;
   background-color: rgba(0,0,0,0.5);
   padding-left: 6px;
   padding-right: 6px;
   left: 0;
+  bottom: 0;
 }
 
 .palette-caption-0 {
@@ -313,7 +307,7 @@ textarea {
   bottom: -moz-calc(1em + 6px);
   bottom: calc(1em + 6px);
 }
-.palette-caption-3 { bottom: 0 }
+.palette-caption-3 { bottom: 0; }
 
 h1 {
   color: blue;
@@ -432,6 +426,10 @@ a {
     width: 70px;
     height: 70px;
     border-radius: 0 10px 10px 0;
+  }
+  .palette-button-video-symbol {
+    font-size: 40px !important;
+    margin: 4px 0 0 -2px !important;
   }
 
 }
