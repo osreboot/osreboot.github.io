@@ -107,6 +107,7 @@ textarea {
 }
 .section-spacer { height: 50px; }
 .section-spacer-2 { height: 30px; }
+.section-spacer-2 { height: 20px; }
 .section-title {
   font-size: large;
   white-space: nowrap;
@@ -465,6 +466,7 @@ a {
   .section { margin: 80px 20px; }
   .section-spacer { height: 80px; }
   .section-spacer-2 { height: 50px; }
+  .section-spacer-3 { height: 30px; }
 
   .item-row, .item-row-rs { flex-direction: row; }
   .item-col, .item-col-rs { flex-direction: column; }
