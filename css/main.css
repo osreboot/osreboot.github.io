@@ -289,6 +289,7 @@ textarea {
   border: none;
 }
 .palette-caption-0, .palette-caption-1, .palette-caption-2, .palette-caption-3 {
+  font-size: small;
   position: absolute;
   white-space: pre-line;
   color: white;
@@ -453,6 +454,9 @@ a {
   .palette-button-video-symbol {
     font-size: 40px !important;
     margin: 4px 0 0 -2px !important;
+  }
+  .palette-caption-0, .palette-caption-1, .palette-caption-2, .palette-caption-3 {
+    font-size: medium;
   }
 
   .jams { padding: 60px 20px; column-gap: 20px; }
