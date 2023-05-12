@@ -87,6 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+:root {
+  --color1: #0000dc;
+  --color2: #dcdcf5;
+}
+
 .page {
   width: 100%;
   margin: auto;
@@ -96,7 +101,7 @@ textarea {
   width: auto;
   margin: 10px;
   padding: 10px;
-  border: 2px solid blue;
+  border: 2px solid var(--color1);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -145,7 +150,7 @@ textarea {
   flex-direction: column;
 }
 .item-row, .item-row-rs, .item-col, .item-col-rs {
-  border: 2px solid lightblue;
+  border: 2px solid var(--color2);
   border-radius: 4px;
 }
 .item-image-half {
@@ -175,7 +180,7 @@ textarea {
   white-space: nowrap
 }
 .cover-panel, .cover-panel-title {
-  border: 2px solid lightblue;
+  border: 2px solid var(--color2);
   border-radius: 6px;
   margin: 4px;
   padding: 10px;
@@ -197,7 +202,7 @@ textarea {
   visibility: hidden;
   position: absolute;
   background-color: white;
-  border: 2px solid blue;
+  border: 2px solid var(--color1);
   border-radius: 6px;
   padding: 8px;
   margin: -10px 0 0 10px;
@@ -212,7 +217,7 @@ textarea {
   top: -moz-calc(50% - 8px);
   top: calc(50% - 8px);
   left: -18px;
-  border-right-color: blue;
+  border-right-color: var(--color1);
   background-color: transparent;
 }
 .cover-email-button .cover-email-button-popup::after {
@@ -233,7 +238,7 @@ textarea {
 
 .fa {
   font-size: 70px;
-  color: blue;
+  color: var(--color1);
   background-color: white;
   border-radius: 10px;
   margin: 5px 15px 5px 15px;
@@ -318,19 +323,19 @@ textarea {
 .palette-caption-3 { bottom: 0; }
 
 h1 {
-  color: blue;
+  color: var(--color1);
   font-family: Tahoma, sans-serif;
 }
 
 h2 {
-  color: blue;
+  color: var(--color1);
   font-family: Tahoma, sans-serif;
   margin-bottom: 0;
   width: 100%;
 }
 
 h3 {
-  color: blue;
+  color: var(--color1);
   text-underline: transparent;
   font-family: Tahoma, sans-serif;
   margin-top: 4px;
@@ -353,7 +358,7 @@ a {
 }
 
 .link-symbol {
-  color: blue;
+  color: var(--color1);
   float: right;
 }
 .link-symbol-b {
@@ -366,7 +371,7 @@ a {
   color: white;
   font-size: small;
   font-family: Tahoma, sans-serif;
-  background-color: blue;
+  background-color: var(--color1);
   border-radius: 12px;
   padding: 5px 8px;
 }
@@ -377,7 +382,7 @@ a {
   border: none;
 }
 .description-decor {
-  border: 2px solid lightblue;
+  border: 2px solid var(--color2);
   border-radius: 4px;
   padding: 10px;
 }
@@ -402,7 +407,7 @@ a {
   margin: auto;
   min-width: 300px;
   max-width: 300px;
-  border: 2px solid lightblue;
+  border: 2px solid var(--color2);
   border-radius: 6px;
   padding: 10px;
 }
