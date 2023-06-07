@@ -83,8 +83,8 @@
                 <div class="description-tech">
                   <p class="label-tech">Java</p>
                   <p class="label-tech">OpenGL</p>
-                  <p class="label-tech">GLFW</p>
                   <p class="label-tech">GLSL</p>
+                  <p class="label-tech2">GLFW</p>
                   <a class="label-tech2" href="https://github.com/LWJGL/lwjgl3" style="text-decoration: underline">LWJGL3</a>
                 </div>
                 <p class="description-verbose">
@@ -223,8 +223,8 @@
             <div class="description-tech">
               <p class="label-tech">Java</p>
               <p class="label-tech">OpenGL</p>
-              <p class="label-tech">GLFW</p>
               <p class="label-tech">GLSL</p>
+              <p class="label-tech2">GLFW</p>
               <a class="label-tech2" href="https://github.com/LWJGL/lwjgl3" style="text-decoration: underline">LWJGL3</a>
             </div>
             <p class="description-verbose">
@@ -342,32 +342,61 @@
 
         <div class="item-row">
           <div class="description">
-            <a href="https://github.com/TTPain/Nucleocide">
-              <h2>"Nucleocide" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+            <a href="https://github.com/osreboot/IotaNor2">
+              <h2>"Iota Nor" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
             </a>
-            <i class="subtext-l">For-Fun | 5-Person Team Project</i>
+            <i class="subtext-l">For-Fun | Solo Project</i>
             <div class="description-tech">
-              <p class="label-tech">Java</p>
-              <p class="label-tech">OpenGL</p>
+              <p class="label-tech">C++</p>
+              <p class="label-tech">OpenGL 4</p>
               <p class="label-tech">GLSL</p>
-              <a class="label-tech2" href="https://legacy.lwjgl.org/" style="text-decoration: underline">LWJGL2</a>
+              <p class="label-tech2">GLFW</p>
             </div>
             <p class="description-verbose">
-              Nucleocide is a top-down multiplayer shooter concept that explores light-based combat.
+              This project is a refined version of my old Ludum Dare 38 game jam submission featuring an experimental
+              glass tile shader.
             </p>
             <p class="description-verbose">
-              My primary role was to construct the game's graphical rendering system. Built using a Java-based OpenGL
-              binding (LWJGL), the system features dynamic pixel-perfect shadows and intricate world material lighting.
+              This game does <i>not</i> use ray-tracing. In fact, it doesn't even use 3D graphics! To achieve the tile
+              lighting, "refraction map" UV lookup textures were pre-baked in Blender. The GLSL fragment shader samples
+              nine refraction maps (representing adjacent tiles) for every glass pixel and determines which background
+              colors to propagate.
             </p>
             <p class="description-verbose">
-              A deferred rendering architecture simplifies the code footprint and allows both entities and tiles to
-              exhibit a range of lighting effects. World tile visual data is supplied in the form of color, normal,
-              metalness, and occlusion textures. Dynamic entities can supply additional emission and displacement
-              textures. A custom GLSL fragment shader ingests this data over several rendering passes and combines it to
-              produce the final display image.
+              While this could have easily been done with ray-tracing, I wanted to see if I could still achieve a
+              convincing effect without relying on specialized hardware!
             </p>
           </div>
 
+          <div id="paletteIotaNor0" class="palette">
+            <div class="palette-view-container">
+              <div class="palette-view" id="iotanorImg1" style="display: block;">
+                <img class="palette-image" src="img/iotanor_1.png" alt=""/>
+              </div>
+              <div class="palette-view" id="iotanorImg2">
+                <img class="palette-image" src="img/iotanor_process.png" alt=""/>
+              </div>
+              <div class="palette-view" id="iotanorImg3">
+                <img class="palette-image" src="img/iotanor_shader.gif" alt=""/>
+              </div>
+              <div class="palette-view" id="iotanorImg0">
+                <img class="palette-image" src="img/iotanor_0.png" alt=""/>
+              </div>
+            </div>
+            <div class="palette-buttons">
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg1')" style="background-image: url(img/iotanor_1.png)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg2')" style="background-image: url(img/iotanor_process.png)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg3')">
+                <span class="material-symbols-outlined palette-button-video-symbol">play_circle</span>
+              </button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg0')" style="background-image: url(img/iotanor_0.png)"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div class="item-row-rs">
           <div id="paletteNucleocide0" class="palette">
             <div class="palette-view-container">
               <div class="palette-view" id="nucleocideImg3" style="display: block;">
@@ -389,6 +418,33 @@
               <button class="palette-button-w" onclick="paletteSelect(event, 'paletteNucleocide0', 'nucleocideImg4')" style="background-image: url(img/nucleocide_4.png)"></button>
               <button class="palette-button-w" onclick="paletteSelect(event, 'paletteNucleocide0', 'nucleocideImg6')" style="background-image: url(img/nucleocide_6.png)"></button>
             </div>
+          </div>
+
+          <div class="description">
+            <a href="https://github.com/TTPain/Nucleocide">
+              <h2>"Nucleocide" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+            </a>
+            <i class="subtext-l">For-Fun | 5-Person Team Project</i>
+            <div class="description-tech">
+              <p class="label-tech">Java</p>
+              <p class="label-tech">OpenGL</p>
+              <p class="label-tech">GLSL</p>
+              <a class="label-tech2" href="https://legacy.lwjgl.org/" style="text-decoration: underline">LWJGL2</a>
+            </div>
+            <p class="description-verbose">
+              Nucleocide is a top-down multiplayer shooter concept that explores light-based combat.
+            </p>
+            <p class="description-verbose">
+              My primary role was to construct the game's rendering system. Built using a Java-based OpenGL binding
+              (LWJGL), the system features dynamic pixel-perfect shadows and intricate world material lighting.
+            </p>
+            <p class="description-verbose">
+              A deferred rendering architecture simplifies the code footprint and allows both entities and tiles to
+              exhibit a range of lighting effects. World tile visual data is supplied in the form of color, normal,
+              metalness, and occlusion textures. Dynamic entities can supply additional emission and displacement
+              textures. A custom GLSL fragment shader ingests this data over several rendering passes and combines it to
+              produce the final image.
+            </p>
           </div>
         </div>
 
@@ -487,7 +543,7 @@
             (Payments Services).
           </i>
           <i class="subtext-l" style="font-size: medium; margin: auto">
-            I DO: resin 3D printing, random microcontroller projects, skiing, astrophotography, distance running, and
+            I DO: resin 3D printing, random microcontroller projects, skiing, astrophotography, trail running, and
             of course: gaming!
           </i>
           <i class="subtext-l" style="font-size: medium; margin: auto">
