@@ -79,7 +79,7 @@
                 <a href="https://github.com/osreboot/Ridhvl2">
                   <h2>Java Game Engine <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
                 </a>
-                <i class="subtext-l">For-Fun | Open-Source Project</i>
+                <i class="subtext-l">For-Fun | Open-Source Project | 2017-2023</i>
                 <div class="description-tech">
                   <p class="label-tech">Java</p>
                   <p class="label-tech">OpenGL</p>
@@ -106,7 +106,7 @@
                 <a href="https://github.com/osreboot/Research-Mesh-Generation/blob/master/Report.pdf">
                   <h2>Tensor Core Mesh Generation (Research Project) <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
                 </a>
-                <i class="subtext-l">Stevens Institute of Technology | Solo Project</i>
+                <i class="subtext-l">Stevens Institute of Technology | Solo Project | 2022</i>
                 <div class="description-tech">
                   <p class="label-tech">CUDA</p>
                   <p class="label-tech">C++</p>
@@ -119,6 +119,62 @@
               <a class="item-image-half" href="https://github.com/osreboot/Research-Mesh-Generation/blob/master/Report.pdf">
                 <img src="img/delaunay.png" alt="" style="width: 100%; height: 100%">
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div class="item-row">
+          <div class="description">
+            <a href="https://github.com/osreboot/IotaNor2">
+              <h2>"Iota Nor" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+            </a>
+            <i class="subtext-l">For-Fun | Solo Project | 2023</i>
+            <div class="description-tech">
+              <p class="label-tech">C++</p>
+              <p class="label-tech">OpenGL 4</p>
+              <p class="label-tech">GLSL</p>
+              <p class="label-tech2">GLFW</p>
+            </div>
+            <p class="description-verbose">
+              This project is a refined version of my old Ludum Dare 38 game jam submission featuring an experimental
+              glass tile shader.
+            </p>
+            <p class="description-verbose">
+              This game does <i>not</i> use ray-tracing. In fact, it doesn't even use 3D graphics! To achieve the tile
+              lighting, "refraction map" UV lookup textures were pre-baked in Blender. The GLSL fragment shader samples
+              nine refraction maps (representing adjacent tiles) for every glass pixel and determines which background
+              colors to propagate.
+            </p>
+            <p class="description-verbose">
+              While this could have easily been done with ray-tracing, I wanted to see if I could still achieve a
+              convincing effect without relying on specialized hardware!
+            </p>
+          </div>
+
+          <div id="paletteIotaNor0" class="palette">
+            <div class="palette-view-container">
+              <div class="palette-view" id="iotanorImg1" style="display: block;">
+                <img class="palette-image" src="img/iotanor_1.png" alt=""/>
+              </div>
+              <div class="palette-view" id="iotanorImg2">
+                <img class="palette-image" src="img/iotanor_process.png" alt=""/>
+              </div>
+              <div class="palette-view" id="iotanorImg3">
+                <img class="palette-image" src="img/iotanor_shader.gif" alt=""/>
+              </div>
+              <div class="palette-view" id="iotanorImg0">
+                <img class="palette-image" src="img/iotanor_0.png" alt=""/>
+              </div>
+            </div>
+            <div class="palette-buttons">
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg1')" style="background-image: url(img/iotanor_1.png)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg2')" style="background-image: url(img/iotanor_process.png)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg3')">
+                <span class="material-symbols-outlined palette-button-video-symbol">play_circle</span>
+              </button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg0')" style="background-image: url(img/iotanor_0.png)"></button>
             </div>
           </div>
         </div>
@@ -182,9 +238,9 @@
 
           <div class="description">
             <a href="https://github.com/osreboot/Demo-Real-Time-Lighting">
-              <h2>Photorealistic Lighting Demonstration <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+              <h2>Photorealistic Lighting Demo <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
             </a>
-            <i class="subtext-l">Stevens Institute of Technology | Solo Project</i>
+            <i class="subtext-l">Stevens Institute of Technology | Solo Project | 2022</i>
             <div class="description-tech">
               <p class="label-tech">CUDA</p>
               <p class="label-tech">C++</p>
@@ -219,7 +275,7 @@
         <div class="item-row">
           <div class="description">
             <h2>"Osmium" Game Prototype</h2>
-            <i class="subtext-l">For-Fun | Solo Project</i>
+            <i class="subtext-l">For-Fun | Solo Project | 2022-2023</i>
             <div class="description-tech">
               <p class="label-tech">Java</p>
               <p class="label-tech">OpenGL</p>
@@ -308,7 +364,7 @@
             <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2129733498">
               <h2>Custom Level for Half-Life: Alyx <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
             </a>
-            <i class="subtext-l">For-Fun | Solo Project</i>
+            <i class="subtext-l">For-Fun | Solo Project | 2020-2021</i>
             <div class="description-tech">
               <p class="label-tech">Source 2</p>
               <p class="label-tech">Lua</p>
@@ -342,61 +398,32 @@
 
         <div class="item-row">
           <div class="description">
-            <a href="https://github.com/osreboot/IotaNor2">
-              <h2>"Iota Nor" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+            <a href="https://github.com/TTPain/Nucleocide">
+              <h2>"Nucleocide" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
             </a>
-            <i class="subtext-l">For-Fun | Solo Project</i>
+            <i class="subtext-l">For-Fun | 5-Person Team Project | 2021</i>
             <div class="description-tech">
-              <p class="label-tech">C++</p>
-              <p class="label-tech">OpenGL 4</p>
+              <p class="label-tech">Java</p>
+              <p class="label-tech">OpenGL</p>
               <p class="label-tech">GLSL</p>
-              <p class="label-tech2">GLFW</p>
+              <a class="label-tech2" href="https://legacy.lwjgl.org/" style="text-decoration: underline">LWJGL2</a>
             </div>
             <p class="description-verbose">
-              This project is a refined version of my old Ludum Dare 38 game jam submission featuring an experimental
-              glass tile shader.
+              Nucleocide is a top-down multiplayer shooter concept that explores light-based combat.
             </p>
             <p class="description-verbose">
-              This game does <i>not</i> use ray-tracing. In fact, it doesn't even use 3D graphics! To achieve the tile
-              lighting, "refraction map" UV lookup textures were pre-baked in Blender. The GLSL fragment shader samples
-              nine refraction maps (representing adjacent tiles) for every glass pixel and determines which background
-              colors to propagate.
+              My primary role was to construct the game's rendering system. Built using a Java-based OpenGL binding
+              (LWJGL), the system features dynamic pixel-perfect shadows and intricate world material lighting.
             </p>
             <p class="description-verbose">
-              While this could have easily been done with ray-tracing, I wanted to see if I could still achieve a
-              convincing effect without relying on specialized hardware!
+              A deferred rendering architecture simplifies the code footprint and allows both entities and tiles to
+              exhibit a range of lighting effects. World tile visual data is supplied in the form of color, normal,
+              metalness, and occlusion textures. Dynamic entities can supply additional emission and displacement
+              textures. A custom GLSL fragment shader ingests this data over several rendering passes and combines it to
+              produce the final image.
             </p>
           </div>
 
-          <div id="paletteIotaNor0" class="palette">
-            <div class="palette-view-container">
-              <div class="palette-view" id="iotanorImg1" style="display: block;">
-                <img class="palette-image" src="img/iotanor_1.png" alt=""/>
-              </div>
-              <div class="palette-view" id="iotanorImg2">
-                <img class="palette-image" src="img/iotanor_process.png" alt=""/>
-              </div>
-              <div class="palette-view" id="iotanorImg3">
-                <img class="palette-image" src="img/iotanor_shader.gif" alt=""/>
-              </div>
-              <div class="palette-view" id="iotanorImg0">
-                <img class="palette-image" src="img/iotanor_0.png" alt=""/>
-              </div>
-            </div>
-            <div class="palette-buttons">
-              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg1')" style="background-image: url(img/iotanor_1.png)"></button>
-              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg2')" style="background-image: url(img/iotanor_process.png)"></button>
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg3')">
-                <span class="material-symbols-outlined palette-button-video-symbol">play_circle</span>
-              </button>
-              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteIotaNor0', 'iotanorImg0')" style="background-image: url(img/iotanor_0.png)"></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-spacer"></div>
-
-        <div class="item-row-rs">
           <div id="paletteNucleocide0" class="palette">
             <div class="palette-view-container">
               <div class="palette-view" id="nucleocideImg3" style="display: block;">
@@ -419,33 +446,6 @@
               <button class="palette-button-w" onclick="paletteSelect(event, 'paletteNucleocide0', 'nucleocideImg6')" style="background-image: url(img/nucleocide_6.png)"></button>
             </div>
           </div>
-
-          <div class="description">
-            <a href="https://github.com/TTPain/Nucleocide">
-              <h2>"Nucleocide" Game Prototype <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
-            </a>
-            <i class="subtext-l">For-Fun | 5-Person Team Project</i>
-            <div class="description-tech">
-              <p class="label-tech">Java</p>
-              <p class="label-tech">OpenGL</p>
-              <p class="label-tech">GLSL</p>
-              <a class="label-tech2" href="https://legacy.lwjgl.org/" style="text-decoration: underline">LWJGL2</a>
-            </div>
-            <p class="description-verbose">
-              Nucleocide is a top-down multiplayer shooter concept that explores light-based combat.
-            </p>
-            <p class="description-verbose">
-              My primary role was to construct the game's rendering system. Built using a Java-based OpenGL binding
-              (LWJGL), the system features dynamic pixel-perfect shadows and intricate world material lighting.
-            </p>
-            <p class="description-verbose">
-              A deferred rendering architecture simplifies the code footprint and allows both entities and tiles to
-              exhibit a range of lighting effects. World tile visual data is supplied in the form of color, normal,
-              metalness, and occlusion textures. Dynamic entities can supply additional emission and displacement
-              textures. A custom GLSL fragment shader ingests this data over several rendering passes and combines it to
-              produce the final image.
-            </p>
-          </div>
         </div>
 
       </div>
@@ -462,61 +462,61 @@
             <h3>Stay Safe! Jam<span class="material-symbols-outlined link-symbol">link</span></h3>
             <i class="subtext-l">4-Person Team Entry</i>
             <img class="jam-image" src="img/jam_preview_ssj.png" alt=""/>
-            <i class="subtext-r">"Cosmic Collective"</i>
+            <i class="subtext-l">2020</i><i class="subtext-r">"Cosmic Collective"</i>
           </a>
           <a href="https://ldjam.com/events/ludum-dare/42/airlock-gridlock" class="jam">
             <h3>Ludum Dare 42 - Jam<span class="material-symbols-outlined link-symbol">link</span></h3>
             <i class="subtext-l">4-Person Team Entry</i>
             <img class="jam-image" src="img/jam_preview_ld42.png" alt=""/>
-            <i class="subtext-r">"Airlock Gridlock"</i>
+            <i class="subtext-l">2018</i><i class="subtext-r">"Airlock Gridlock"</i>
           </a>
           <a href="https://hyprgloo.itch.io/unreached" class="jam">
             <h3>Pizza Jam 2<span class="material-symbols-outlined link-symbol">link</span></h3>
             <i class="subtext-l">3-Person Team Entry</i>
             <img class="jam-image" src="img/jam_preview_pj2.png" alt=""/>
-            <i class="subtext-r">"Unreached"</i>
+            <i class="subtext-l">2018</i><i class="subtext-r">"Unreached"</i>
           </a>
           <a href="https://ldjam.com/events/ludum-dare/38/iota-nor" class="jam">
             <h3>Ludum Dare 38 - Compo<span class="material-symbols-outlined link-symbol">link</span></h3>
             <i class="subtext-l">Solo Entry</i>
             <img class="jam-image" src="img/jam_preview_ld38.png" alt=""/>
-            <i class="subtext-r">"Iota Nor"</i>
+            <i class="subtext-l">2017</i><i class="subtext-r">"Iota Nor"</i>
           </a>
           <div class="jam">
             <h3>Ludum Dare 34 - Compo<span class="material-symbols-outlined link-symbol-b">link_off</span></h3>
             <i class="subtext-l">Solo Entry</i>
             <img class="jam-image" src="img/jam_preview_ld34.png" alt=""/>
-            <i class="subtext-r">"net_forget"</i>
+            <i class="subtext-l">2015</i><i class="subtext-r">"net_forget"</i>
           </div>
           <div class="jam">
             <h3>Ludum Dare 33 - Jam<span class="material-symbols-outlined link-symbol-b">link_off</span></h3>
-            <i class="subtext-l">3-Person Team Entry</i>
+            <i class="subtext-l">4-Person Team Entry</i>
             <img class="jam-image" src="img/jam_preview_ld33.png" alt=""/>
-            <i class="subtext-r">"Tenebrous Expanse"</i>
+            <i class="subtext-l">2015</i><i class="subtext-r">"Tenebrous Expanse"</i>
           </div>
           <div class="jam">
             <h3>Mini Ludum Dare 60<span class="material-symbols-outlined link-symbol-b">link_off</span></h3>
             <i class="subtext-l">3-Person Team Entry</i>
             <img class="jam-image" src="img/jam_preview_mld60.png" alt=""/>
-            <i class="subtext-r">"Audiovisual Extermination"</i>
+            <i class="subtext-l">2015</i><i class="subtext-r">"Audiovisual Extermination"</i>
           </div>
           <div class="jam">
             <h3>Mini Ludum Dare 59<span class="material-symbols-outlined link-symbol-b">link_off</span></h3>
             <i class="subtext-l">3-Person Team Entry</i>
             <img class="jam-image" src="img/jam_preview_mld59.png" alt=""/>
-            <i class="subtext-r">".saturate"</i>
+            <i class="subtext-l">2015</i><i class="subtext-r">".saturate"</i>
           </div>
           <div class="jam">
             <h3>Ludum Dare 32 - Compo<span class="material-symbols-outlined link-symbol-b">link_off</span></h3>
             <i class="subtext-l">Solo Entry</i>
             <img class="jam-image" src="img/jam_preview_ld32.png" alt=""/>
-            <i class="subtext-r">"Corrugated Fidelity"</i>
+            <i class="subtext-l">2015</i><i class="subtext-r">"Corrugated Fidelity"</i>
           </div>
           <div class="jam">
             <h3>Ludum Dare 31 - Jam<span class="material-symbols-outlined link-symbol-b">link_off</span></h3>
             <i class="subtext-l">Solo Entry</i>
             <img class="jam-image" src="img/jam_preview_ld31.png" alt=""/>
-            <i class="subtext-r">"Together in Thousands"</i>
+            <i class="subtext-l">2014</i><i class="subtext-r">"Together in Thousands"</i>
           </div>
         </div>
 
