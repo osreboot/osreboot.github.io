@@ -29,6 +29,17 @@
   <div class="page">
 
 
+    <!--
+
+    TODO:
+    - click-to-expand palette images
+    - upload presentation for lighting project
+    - https://stackoverflow.com/questions/59335731/how-to-create-own-embed-site-for-discord
+    - phone rtx text overlap
+    - section title padding border overlap issue
+
+    -->
+
     <div class="section">
       <div class="section-title-container"><h1 class="section-title">0. Contact</h1></div>
       <div class="section-content">
@@ -138,8 +149,8 @@
               <p class="label-tech2">GLFW</p>
             </div>
             <p class="description-verbose">
-              This project is a refined version of my old Ludum Dare 38 game jam submission featuring an experimental
-              glass tile shader.
+              A refined version of my old LD38 game jam submission that features an experimental glass tile shader,
+              graphical improvements, and a mechanics overhaul.
             </p>
             <p class="description-verbose">
               This game does <i>not</i> use ray-tracing. In fact, it doesn't even use 3D graphics! To achieve the tile
@@ -331,11 +342,14 @@
         <div class="item-row-rs">
           <div class="palette" id="paletteAlyx0">
             <div class="palette-view-container">
-              <div class="palette-view" id="alyxImg6" style="display: block;">
-                <img class="palette-image" src="img/alyx_6.jpg" alt=""/>
-              </div>
-              <div class="palette-view" id="alyxImg0">
+              <div class="palette-view" id="alyxImg0" style="display: block;">
                 <img class="palette-image" src="img/alyx_store_page.png" alt=""/>
+              </div>
+              <div class="palette-view" id="alyxImg7">
+                <img class="palette-image" src="img/alyx_7.png" alt=""/>
+              </div>
+              <div class="palette-view" id="alyxImg6">
+                <img class="palette-image" src="img/alyx_6.jpg" alt=""/>
               </div>
               <div class="palette-view" id="alyxImg5">
                 <img class="palette-image" src="img/alyx_5.png" alt=""/>
@@ -346,17 +360,14 @@
               <div class="palette-view" id="alyxImg4">
                 <img class="palette-image" src="img/alyx_4.png" alt=""/>
               </div>
-              <div class="palette-view" id="alyxImg7">
-                <img class="palette-image" src="img/alyx_7.png" alt=""/>
-              </div>
             </div>
             <div class="palette-buttons">
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg6')" style="background-image: url(img/alyx_6.jpg)"></button>
               <button class="palette-button" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg0')" style="background-image: url(img/alyx_store_page.png)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg7')" style="background-image: url(img/alyx_7.png)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg6')" style="background-image: url(img/alyx_6.jpg)"></button>
               <button class="palette-button-w" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg5')" style="background-image: url(img/alyx_5.png)"></button>
               <button class="palette-button" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg1')" style="background-image: url(img/alyx_1.png)"></button>
               <button class="palette-button" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg4')" style="background-image: url(img/alyx_4.png)"></button>
-              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteAlyx0', 'alyxImg7')" style="background-image: url(img/alyx_7.png)"></button>
             </div>
           </div>
 
