@@ -235,8 +235,7 @@ textarea {
   visibility: visible;
   opacity: 1;
 }
-
-.fa {
+.cover-symbol-social {
   font-size: 70px;
   color: var(--color1);
   background-color: white;
