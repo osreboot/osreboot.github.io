@@ -395,6 +395,18 @@ a {
   text-align: justify;
   text-justify: auto;
 }
+.description-symbol-star {
+  color: black;
+  margin: 2px;
+  float: none;
+  font-size: medium;
+}
+.description-emphasis {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  text-justify: auto;
+}
 
 .jams {
   display: grid;
@@ -404,7 +416,7 @@ a {
   row-gap: 60px;
 }
 .jam {
-  margin: auto;
+  margin: 0 auto auto auto;
   min-width: 300px;
   max-width: 300px;
   border: 2px solid var(--color2);
@@ -416,12 +428,26 @@ a {
   width: 100%;
   height: 210px;
   border-radius: 4px;
-  margin: 10px 0 10px 0;
+  margin: 8px 0;
 }
 .jam-verbose {
   font-family: Tahoma, sans-serif;
   text-align: justify;
   text-justify: auto;
+}
+.jam-stats {
+  font-family: Tahoma, sans-serif;
+  font-size: small;
+  text-align: justify;
+  text-justify: auto;
+  margin: auto;
+  border-spacing: 10px 0;
+}
+.jam-symbol-award {
+  color: black;
+  margin: 2px;
+  float: none;
+  font-size: small;
 }
 
 @media (min-width: 900px) {
