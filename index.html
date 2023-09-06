@@ -151,10 +151,9 @@
               graphical improvements, and a mechanics overhaul.
             </p>
             <p class="description-verbose">
-              This game does <i>not</i> use ray-tracing. In fact, it doesn't even use 3D graphics! To achieve the tile
-              lighting, "refraction map" UV lookup textures were pre-baked in Blender. The GLSL fragment shader samples
-              nine refraction maps (representing adjacent tiles) for every glass pixel and determines which background
-              colors to propagate.
+              To achieve the tile lighting, "refraction map" UV lookup textures were pre-baked in Blender. The GLSL
+              fragment shader samples nine refraction maps (representing adjacent tiles) for every glass pixel and
+              determines which background colors to propagate.
             </p>
             <p class="description-verbose">
               While this could have easily been done with ray-tracing, I wanted to see if I could still achieve a
@@ -200,93 +199,87 @@
         <div class="item-row-rs">
           <div class="palette" id="paletteRtx0">
             <div class="palette-view-container">
-              <iframe class="palette-view" id="rtxImg0" style="display: block" src="https://www.youtube.com/embed/KXM9I_J64WA?enablejsapi=1"
-                      title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <div class="palette-view" id="rtxImg1">
-                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx1/public" alt=""/>
-                <div class="palette-caption-1">Material: Lambertian</div>
-                <div class="palette-caption-2">1000 Samples/Pixel</div>
-                <div class="palette-caption-3">Total Render Time: 3111.67ms (RTX 2070 Super)</div>
+              <div class="palette-view" id="rtxImg1" style="display: block">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/gecko1/public" alt=""/>
+                <div class="palette-caption-1">Gecko Model by Andreasstrom</div>
+                <div class="palette-caption-2">20,000 Samples/Pixel</div>
               </div>
               <div class="palette-view" id="rtxImg2">
-                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx2/public" alt=""/>
-                <div class="palette-caption-1">Material: Chrome</div>
-                <div class="palette-caption-2">1000 Samples/Pixel</div>
-                <div class="palette-caption-3">Total Render Time: 3185.99ms (RTX 2070 Super)</div>
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/gecko2/public" alt=""/>
+                <div class="palette-caption-1">Gecko Model by Andreasstrom</div>
+                <div class="palette-caption-2">20,000 Samples/Pixel</div>
               </div>
               <div class="palette-view" id="rtxImg3">
-                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx3/public" alt=""/>
-                <div class="palette-caption-1">Material: Glass</div>
-                <div class="palette-caption-2">1000 Samples/Pixel</div>
-                <div class="palette-caption-3">Total Render Time: 5283.69ms (RTX 2070 Super)</div>
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/gecko3/public" alt=""/>
+                <div class="palette-caption-1">Gecko Model by Andreasstrom</div>
+                <div class="palette-caption-2">20,000 Samples/Pixel</div>
               </div>
               <div class="palette-view" id="rtxImg4">
-                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx4/public" alt=""/>
-                <div class="palette-caption-1">Materials: Shiny, Anodized</div>
-                <div class="palette-caption-2">1000 Samples/Pixel</div>
-                <div class="palette-caption-3">Total Render Time: 3389.90ms (RTX 2070 Super)</div>
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx8/public" alt=""/>
+                <div class="palette-caption-1">"Farm" Scene</div>
+                <div class="palette-caption-2">20,000 Samples/Pixel</div>
               </div>
               <div class="palette-view" id="rtxImg5">
-                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx5/public" alt=""/>
-                <div class="palette-caption-1">Materials: Luminous, Frosted Glass</div>
-                <div class="palette-caption-2">1000 Samples/Pixel</div>
-                <div class="palette-caption-3">Total Render Time: 1717.25ms (RTX 2070 Super)</div>
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx9/public" alt=""/>
+                <div class="palette-caption-1">"Background" Scene</div>
+                <div class="palette-caption-2">20,000 Samples/Pixel</div>
               </div>
               <div class="palette-view" id="rtxImg6">
-                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx6/public" alt=""/>
-                <div class="palette-caption-1">Materials: Frosted Glass, Lambertian</div>
-                <div class="palette-caption-2">1000 Samples/Pixel</div>
-                <div class="palette-caption-3">Total Render Time: 4463.83ms (RTX 2070 Super)</div>
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx10/public" alt=""/>
+                <div class="palette-caption-1">"Tutorial" Scene</div>
+                <div class="palette-caption-2">20,000 Samples/Pixel</div>
               </div>
+              <iframe class="palette-view" id="rtxImg0" src="https://www.youtube.com/embed/KXM9I_J64WA?enablejsapi=1" loading="lazy"
+                      title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="palette-buttons">
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg1')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/gecko1/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg2')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/gecko2/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg3')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/gecko3/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg4')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx8/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg5')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx9/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg6')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx10/thumbp)"></button>
               <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg0')">
                 <span class="material-symbols-outlined palette-button-video-symbol">play_circle</span>
               </button>
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg1')"
-                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx1/thumbp)"></button>
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg2')"
-                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx2/thumbp)"></button>
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg3')"
-                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx3/thumbp)"></button>
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg4')"
-                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx4/thumbp)"></button>
-              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg5')"
-                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx5/thumbp)"></button>
-              <button class="palette-button" onclick="paletteSelect(event, 'paletteRtx0', 'rtxImg6')"
-                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/rtx6/thumbp)"></button>
             </div>
           </div>
 
           <div class="description">
             <a href="https://github.com/osreboot/Demo-Real-Time-Lighting">
-              <h2>Photorealistic Lighting Demo <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+              <h2>Photorealistic Lighting Sandbox <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
             </a>
-            <i class="subtext-l">Stevens Institute of Technology | Solo Project | 2022</i>
+            <i class="subtext-l">Stevens Institute of Technology, For-Fun | Solo Project | 2022-2023</i>
             <div class="description-tech">
               <p class="label-tech">C++</p>
               <p class="label-tech">CUDA</p>
               <a class="label-tech2" href="https://github.com/owl-project/owl" style="text-decoration: underline">OWL</a>
             </div>
             <p class="description-verbose">
-              This project demonstrates the application of NVIDIA Ray-Tracing Core hardware in accelerating realistic
-              lighting simulation.
+              <i>This fantastic Madagascar Giant Day Gecko model is not my own creation. It was designed by Andreasstrom
+              and is available on <a href="https://www.turbosquid.com/3d-models/gecko-rig-model-1181653" style="text-decoration: underline">TurboSquid</a></i>.
             </p>
             <p class="description-verbose">
-              The following techniques are utilized:
+              This project uses NVIDIA RTX hardware acceleration to render photorealistic scenes and materials!
+              Implements the following rendering techniques/light behaviors:
             </p>
             <ul class="description-verbose">
-              <li>Reflection</li>
-              <li>Ray Attenuation</li>
+              <li>Reflection (Diffuse, Specular)</li>
               <li>Ray Scattering</li>
               <li>Multisampling</li>
-              <li>Lambertian Reflections</li>
               <li>Refraction</li>
               <li>Schlick's Approximation</li>
+              <li>Light Sources</li>
             </ul>
             <p class="description-verbose">
-              Parts of the linked video has been sped up to allow for a higher multisampling ratio and to improve image
-              clarity.
+              Supports real-time and static rendering, OBJ model loading, texture maps,
+              configurable shader parameters, and more!
             </p>
           </div>
         </div>
