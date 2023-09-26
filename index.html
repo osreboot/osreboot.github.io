@@ -134,6 +134,74 @@
 
         <div class="section-spacer"></div>
 
+        <div class="item-row-rs" id="project-parallax">
+          <div class="palette" id="paletteParallax">
+            <div class="palette-view-container">
+              <div class="palette-view" id="parallaxImg1" style="display: block;">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax1/public" alt=""/>
+              </div>
+              <div class="palette-view" id="parallaxImg2">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax2/public" alt=""/>
+              </div>
+              <div class="palette-view" id="parallaxImg5">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax5/public" alt=""/>
+              </div>
+              <div class="palette-view" id="parallaxImg3">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax3/public" alt=""/>
+              </div>
+              <div class="palette-view" id="parallaxImg4">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax4/public" alt=""/>
+              </div>
+              <div class="palette-view" id="parallaxImg6">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax6/public" alt=""/>
+              </div>
+            </div>
+            <div class="palette-buttons">
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteParallax', 'parallaxImg1')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax1/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteParallax', 'parallaxImg2')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax2/thumbp)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteParallax', 'parallaxImg5')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax5/thumbp)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteParallax', 'parallaxImg3')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax3/thumbp)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteParallax', 'parallaxImg4')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax4/thumbp)"></button>
+              <button class="palette-button-w" onclick="paletteSelect(event, 'paletteParallax', 'parallaxImg6')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/parallax6/thumbp)"></button>
+            </div>
+          </div>
+
+          <div class="description">
+            <a href="https://github.com/osreboot/Parallax-Materials">
+              <h2>UE5: Parallax Materials <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+            </a>
+            <i class="subtext-l">For-Fun | Solo Project | 2023</i>
+            <div class="description-tech">
+              <p class="label-tech">Unreal Engine 5.3</p>
+              <p class="label-tech">HLSL</p>
+            </div>
+            <p class="description-verbose">
+              This project is a content plugin for Unreal Engine 5.3 that adds infinity mirror-style parallax materials.
+              The base material is highly configurable and exposes parameters for: base texture, colorization, number of
+              parallax layers, world-space distance between parallax layers, and more.
+            </p>
+            <p class="description-verbose">
+              Built using the UE Material Editor and a bit of HLSL, the project achieves two distinct effects:
+            </p>
+            <p class="description-verbose">
+              1) Layer-based parallax texture offset (to create fake depth), which is calculated in the vertex shader
+              using the camera's current position.
+            </p>
+            <p class="description-verbose">
+              2) Automatic texture segmentation & stretching to preserve edge/corner aspect ratios and
+              allow panels to procedurally fill space.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
         <div class="item-row" id="project-iotanor2">
           <div class="description">
             <a href="https://github.com/osreboot/IotaNor2">
@@ -415,6 +483,7 @@
           </div>
         </div>
 
+        <!--
         <div class="section-spacer"></div>
 
         <div class="item-row" id="project-nucleocide">
@@ -473,6 +542,7 @@
             </div>
           </div>
         </div>
+        -->
 
       </div>
 
