@@ -80,54 +80,64 @@
       <div class="section-title-container"><h1 class="section-title">1. Projects</h1></div>
       <div class="section-content">
 
-        <div class="item-row" style="gap: 50px; border: none;">
-          <div class="description description-decor" id="project-ridhvl">
-            <div class="item-row-col">
-              <div style="flex: 50%">
-                <a href="https://github.com/osreboot/Ridhvl2">
-                  <h2>Java Game Engine <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
-                </a>
-                <i class="subtext-l">For-Fun | Open-Source Project | 2017-2023</i>
-                <div class="description-tech">
-                  <p class="label-tech">Java</p>
-                  <p class="label-tech">OpenGL</p>
-                  <p class="label-tech">GLSL</p>
-                  <p class="label-tech2">GLFW</p>
-                  <a class="label-tech2" href="https://github.com/LWJGL/lwjgl3" style="text-decoration: underline">LWJGL 3</a>
-                </div>
-                <p class="description-emphasis">
-                  <span class="fa fa-star description-symbol-star"></span>
-                  Used by EVERY Java game on this site! <i class="subtext-l" style="font-weight: normal">(except my very first jam game, LD31)</i>
-                </p>
-                <p class="description-verbose">
-                  Provides a frame timing mechanism, basic shape rendering tools, display management, resource loading,
-                  a custom font system, shader access, a component-based menu system, common math functions, and more!
-                </p>
-              </div>
-              <a class="item-image-half" href="https://github.com/osreboot/Ridhvl2">
-                <img src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/ridhvl2/public" alt="" style="width: 100%; height: 100%">
-              </a>
+        <div class="item-row-rs" id="project-splat">
+          <div class="description">
+            <a href="https://github.com/osreboot/Gaussian-Splatterer">
+              <h2>Gaussian Splat Training Utility <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+            </a>
+            <i class="subtext-l">For-Fun | Solo Project | 2023</i>
+            <div class="description-tech">
+              <p class="label-tech">C++</p>
+              <p class="label-tech">CUDA</p>
+              <p class="label-tech">OpenGL</p>
+              <a class="label-tech2" href="https://github.com/owl-project/owl" style="text-decoration: underline">OptiX Wrapper Library</a>
+              <a class="label-tech2" href="https://github.com/wxWidgets/wxWidgets" style="text-decoration: underline">wxWidgets</a>
             </div>
+            <p class="description-verbose">
+              This project is a GUI-based Gaussian splat training utility built specifically for converting triangle
+              meshes and self-contained models into splats.
+            </p>
+            <p class="description-verbose">
+              It uses my own RTX ray tracer and virtual photogrammetry to procedurally create truth images of the model,
+              which are then fed into a series of CUDA kernels that iteratively align the splats through gradient
+              descent.
+            </p>
+            <p class="description-verbose">
+              <i>Example models shown here are available on
+                <a href="https://quixel.com/megascans/home/" style="text-decoration: underline">Quixel</a> and
+                <a href="https://www.turbosquid.com/3d-models/gecko-rig-model-1181653" style="text-decoration: underline">TurboSquid</a></i>.
+            </p>
           </div>
-          <div class="description description-decor" id="project-tensor">
-            <div class="item-row-col">
-              <div style="flex: 50%">
-                <a href="https://github.com/osreboot/Research-Mesh-Generation/blob/master/Report.pdf">
-                  <h2>Tensor Core Mesh Generation (Research Project) <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
-                </a>
-                <i class="subtext-l">Stevens Institute of Technology | Solo Project | 2022</i>
-                <div class="description-tech">
-                  <p class="label-tech">C++</p>
-                  <p class="label-tech">CUDA</p>
-                </div>
-                <p class="description-verbose">
-                  Explores the design, implementation, and evaluation of a novel method for accelerating 2D point cloud
-                  triangulation using NVIDIA Tensor Core matrix multiply-accumulate operations.
-                </p>
+
+          <div class="palette" id="paletteSplat">
+            <div class="palette-view-container">
+              <div class="palette-view" id="splatImg1" style="display: block">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat2/public" alt=""/>
               </div>
-              <a class="item-image-half" href="https://github.com/osreboot/Research-Mesh-Generation/blob/master/Report.pdf">
-                <img src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/delaunay/public" alt="" style="width: 100%; height: 100%">
-              </a>
+              <div class="palette-view" id="splatImg2">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat1/public" alt=""/>
+              </div>
+              <div class="palette-view" id="splatImg3">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat3/public" alt=""/>
+              </div>
+              <div class="palette-view" id="splatImg4">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat4/public" alt=""/>
+              </div>
+              <div class="palette-view" id="splatImg5">
+                <img class="palette-image" src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat5/public" alt=""/>
+              </div>
+            </div>
+            <div class="palette-buttons">
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteSplat', 'splatImg1')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat2/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteSplat', 'splatImg2')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat1/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteSplat', 'splatImg3')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat3/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteSplat', 'splatImg4')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat4/thumbp)"></button>
+              <button class="palette-button" onclick="paletteSelect(event, 'paletteSplat', 'splatImg5')"
+                      style="background-image: url(https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/splat5/thumbp)"></button>
             </div>
           </div>
         </div>
@@ -264,6 +274,60 @@
 
         <div class="section-spacer"></div>
 
+        <div class="item-row" style="gap: 50px; border: none;">
+          <div class="description description-decor" id="project-ridhvl">
+            <div class="item-row-col">
+              <div style="flex: 50%">
+                <a href="https://github.com/osreboot/Ridhvl2">
+                  <h2>Java Game Engine <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+                </a>
+                <i class="subtext-l">For-Fun | Open-Source Project | 2017-2023</i>
+                <div class="description-tech">
+                  <p class="label-tech">Java</p>
+                  <p class="label-tech">OpenGL</p>
+                  <p class="label-tech">GLSL</p>
+                  <p class="label-tech2">GLFW</p>
+                  <a class="label-tech2" href="https://github.com/LWJGL/lwjgl3" style="text-decoration: underline">LWJGL 3</a>
+                </div>
+                <p class="description-emphasis">
+                  <span class="fa fa-star description-symbol-star"></span>
+                  Used by every Java game on this site (except my very first jam game, LD31).
+                </p>
+                <p class="description-verbose">
+                  Provides a frame timing mechanism, basic shape rendering tools, display management, resource loading,
+                  a custom font system, shader access, a component-based menu system, common math functions, and more!
+                </p>
+              </div>
+              <a class="item-image-half" href="https://github.com/osreboot/Ridhvl2">
+                <img src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/ridhvl2/public" alt="" style="width: 100%; height: 100%">
+              </a>
+            </div>
+          </div>
+          <div class="description description-decor" id="project-tensor">
+            <div class="item-row-col">
+              <div style="flex: 50%">
+                <a href="https://github.com/osreboot/Research-Mesh-Generation/blob/master/Report.pdf">
+                  <h2>Tensor Core Mesh Generation (Research Project) <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+                </a>
+                <i class="subtext-l">Stevens Institute of Technology | Solo Project | 2022</i>
+                <div class="description-tech">
+                  <p class="label-tech">C++</p>
+                  <p class="label-tech">CUDA</p>
+                </div>
+                <p class="description-verbose">
+                  Explores the design, implementation, and evaluation of a novel method for accelerating 2D point cloud
+                  triangulation using NVIDIA Tensor Core matrix multiply-accumulate operations.
+                </p>
+              </div>
+              <a class="item-image-half" href="https://github.com/osreboot/Research-Mesh-Generation/blob/master/Report.pdf">
+                <img src="https://imagedelivery.net/-HRWkhCPYrm_PXmT8LmujQ/showcase/delaunay/public" alt="" style="width: 100%; height: 100%">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
         <div class="item-row-rs" id="project-rtx">
           <div class="palette" id="paletteRtx0">
             <div class="palette-view-container">
@@ -321,18 +385,14 @@
 
           <div class="description">
             <a href="https://github.com/osreboot/Demo-Real-Time-Lighting">
-              <h2>Photorealistic Lighting Sandbox <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
+              <h2>RTX Lighting Sandbox <span class="material-symbols-outlined link-symbol" style="float: none">link</span></h2>
             </a>
-            <i class="subtext-l">Stevens Institute of Technology, For-Fun | Solo Project | 2022-2023</i>
+            <i class="subtext-l">Stevens Institute of Technology & For-Fun | Solo Project | 2022-2023</i>
             <div class="description-tech">
               <p class="label-tech">C++</p>
               <p class="label-tech">CUDA</p>
-              <a class="label-tech2" href="https://github.com/owl-project/owl" style="text-decoration: underline">OWL</a>
+              <a class="label-tech2" href="https://github.com/owl-project/owl" style="text-decoration: underline">OptiX Wrapper Library</a>
             </div>
-            <p class="description-verbose">
-              <i>This fantastic Madagascar Giant Day Gecko model is not my own creation. It was designed by Andreasstrom
-              and is available on <a href="https://www.turbosquid.com/3d-models/gecko-rig-model-1181653" style="text-decoration: underline">TurboSquid</a></i>.
-            </p>
             <p class="description-verbose">
               This project uses NVIDIA RTX hardware acceleration to render photorealistic scenes and materials!
               Implements the following rendering techniques/light behaviors:
@@ -348,6 +408,10 @@
             <p class="description-verbose">
               Supports real-time and static rendering, OBJ model loading, texture maps,
               configurable shader parameters, and more!
+            </p>
+            <p class="description-verbose">
+              <i>This fantastic Madagascar Giant Day Gecko model is not my own creation. It was designed by Andreasstrom
+                and is available on <a href="https://www.turbosquid.com/3d-models/gecko-rig-model-1181653" style="text-decoration: underline">TurboSquid</a></i>.
             </p>
           </div>
         </div>
