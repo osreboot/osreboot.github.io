@@ -1,8 +1,3 @@
-function copyEmail(){
-  navigator.clipboard.writeText("weavercf@rose-hulman.edu").then();
-  document.getElementById("cover-email-button-popup").textContent = "Copied!";
-}
-
 function paletteSelect(event, idParent, idChild){
   let childrenParent = document.getElementById(idParent).children;
   let children = childrenParent.item(0).children;

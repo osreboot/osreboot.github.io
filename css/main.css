@@ -167,7 +167,7 @@ textarea {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 .cover-title {
   font-size: xx-large;
@@ -241,6 +241,12 @@ textarea {
   background-color: white;
   border-radius: 10px;
   margin: 5px 15px 5px 15px;
+}
+.cover-panel-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
 }
 
 .palette {
@@ -469,7 +475,7 @@ a {
 
   .cover { grid-template-columns: repeat(2, 1fr); }
   .cover-panel { margin: 10px; padding: 30px; }
-  #cover-panel-email { grid-row: 1; grid-column: 2; }
+  #cover-panel-email { grid-row: 2; grid-column: 1; }
   .cover-panel-title { padding: 58px; }
   .cover-title { font-size: xxx-large; }
   .cover-title-sub { font-size: large; }
